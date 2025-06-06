@@ -15,7 +15,7 @@ describe('🛒 Add to Cart Flow - Full Coverage', () => {
   })
 
   // Desktop - Logged-in user (Happy Path)
-  describe('✅ TC01 - Add product as logged-in user [Desktop]', () => {
+  describe('TC01 - Add product as logged-in user [Desktop]', () => {
     beforeEach(() => {
       cy.viewport(1280, 800)
       cy.visit('/')
@@ -38,7 +38,7 @@ describe('🛒 Add to Cart Flow - Full Coverage', () => {
   })
 
   // Mobile - Guest user (session-based cart)
-  describe('✅ TC02 - Add product as guest user [Mobile]', () => {
+  describe('TC02 - Add product as guest user [Mobile]', () => {
     beforeEach(() => {
       cy.viewport('iphone-6')
       cy.visit('/')
@@ -57,7 +57,7 @@ describe('🛒 Add to Cart Flow - Full Coverage', () => {
   })
 
   // Tablet - Edge case: product doesn't exist
-  describe('⚠️ TC03 - Add non-existent product [Tablet]', () => {
+  describe('TC03 - Add non-existent product [Tablet]', () => {
     beforeEach(() => {
       cy.viewport('ipad-2')
       cy.visit('/')
@@ -70,7 +70,7 @@ describe('🛒 Add to Cart Flow - Full Coverage', () => {
   })
 
   // Edge case: Add same product twice
-  describe('⚠️ TC04 - Add same product twice (duplicates)', () => {
+  describe('TC04 - Add same product twice (duplicates)', () => {
     beforeEach(() => {
       cy.viewport(1280, 720)
       cy.visit('/')
