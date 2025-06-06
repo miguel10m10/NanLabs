@@ -3,7 +3,7 @@ import { signupPage } from '../pages/SignupPage'
 import { productsPage } from '../pages/ProductsPage'
 import { cartPage } from '../pages/CartPage'
 
-describe('🛒 Add to Cart Flow - Full Coverage', () => {
+describe('Add to Cart Flow - Full Coverage', () => {
   let user
   const productName = 'Blue Top'
   const nonExistentProduct = 'NonExistentProduct123'
